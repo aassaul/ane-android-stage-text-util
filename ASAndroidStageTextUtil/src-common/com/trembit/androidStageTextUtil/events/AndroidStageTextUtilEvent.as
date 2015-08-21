@@ -7,10 +7,23 @@
 package com.trembit.androidStageTextUtil.events {
 	import flash.events.Event;
 
-	public class AndroidStageTextUtilEvent extends Event {
+	public final class AndroidStageTextUtilEvent extends Event {
 
-		public function AndroidStageTextUtilEvent(type:String, bubbles:Boolean, cancelable:Boolean) {
-			super(type, bubbles, cancelable);
+		public static const TEXT_COMPONENT_READY:String = "textComponentReady";
+
+		private var _input:*;
+
+		public function get input():*{
+			return _input;
+		}
+
+		public function AndroidStageTextUtilEvent(eventType:String, input:*) {
+			super(eventType, false, false);
+			_input = input;
+		}
+
+		override public function clone():Event {
+			return new AndroidStageTextUtilEvent(type, input);
 		}
 	}
 }

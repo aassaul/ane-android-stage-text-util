@@ -8,7 +8,9 @@ package com.trembit.androidStageTextUtil {
 
 	import flash.events.IEventDispatcher;
 
+	[Event(type="com.trembit.androidStageTextUtil.events.AndroidStageTextUtilEvent", name="textComponentReady")]
 	public interface IAndroidStageTextUtil extends IEventDispatcher {
 		function dispose():void;
+		function setTextToTextInput(text:String, input:*):void;
 	}
 }

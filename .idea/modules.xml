@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ASAndroidStageTextUtil/ASAndroidStageTextUtil.iml" filepath="$PROJECT_DIR$/ASAndroidStageTextUtil/ASAndroidStageTextUtil.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ASTestMobile/ASTestMobile.iml" filepath="$PROJECT_DIR$/ASTestMobile/ASTestMobile.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaAndroidStageTextUtil/JavaAndroidStageTextUtil.iml" filepath="$PROJECT_DIR$/JavaAndroidStageTextUtil/JavaAndroidStageTextUtil.iml" />
       <module fileurl="file://$PROJECT_DIR$/Root.iml" filepath="$PROJECT_DIR$/Root.iml" />
     </modules>

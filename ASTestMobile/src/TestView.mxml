@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+ Created with IntelliJ IDEA.
+ User: Andrey Assaul
+ Date: 21.08.2015
+ Time: 12:12
+-->
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark">
+    <fx:Script><![CDATA[
+        import com.trembit.androidStageTextUtil.AndroidStageTextUtil;
+
+        private var stageTextUtil:AndroidStageTextUtil = new AndroidStageTextUtil();
+
+        private var text:String;
+
+        ]]></fx:Script>
+    <s:layout>
+        <s:VerticalLayout horizontalAlign="center" verticalAlign="middle"/>
+    </s:layout>
+
+    <s:TextInput change="text = event.currentTarget.text"/>
+
+    <s:TextInput id="textInput"/>
+
+    <s:Button label="Insert Text" click="stageTextUtil.setTextToTextInput(text, textInput)"/>
+</s:View>

@@ -6,10 +6,17 @@
  */
 package com.trembit.androidStageTextUtil {
 
+	import com.trembit.androidStageTextUtil.events.AndroidStageTextUtilEvent;
+
 	import flash.events.EventDispatcher;
-	import flash.net.URLRequest;
 
 	public class AndroidStageTextUtil extends EventDispatcher implements IAndroidStageTextUtil{
 		public function dispose():void {}
+
+		public function setTextToTextInput(text:String, input:*):void {
+			input.setFocus();
+			input.text = text;
+			dispatchEvent(new AndroidStageTextUtilEvent(AndroidStageTextUtilEvent.TEXT_COMPONENT_READY, input));
+		}
 	}
 }
